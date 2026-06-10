@@ -1,69 +1,54 @@
-export default function About() {
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+export default function AboutPage() {
   return (
-    <section
-      id="sobre-mi"
-      className="py-24"
-    >
-      <h2 className="text-4xl font-bold mb-12">
-        Sobre mí
-      </h2>
+    <main className="bg-slate-950 text-white min-h-screen">
+      <Navbar />
 
-      <div className="grid md:grid-cols-2 gap-10">
+      <section className="max-w-5xl mx-auto px-6 md:px-8 pt-32 pb-20">
+        <p className="text-violet-400 mb-4">
+          Sobre mí
+        </p>
 
-        <div>
-          <p className="text-lg text-gray-300 leading-relaxed">
-            Soy Ingeniera de Software con experiencia en
-            desarrollo frontend, aseguramiento de calidad (QA)
-            y despliegue de plataformas digitales.
+        <h1 className="text-4xl md:text-5xl font-bold mb-10">
+          Conoce un poco más sobre mí
+        </h1>
 
-            He participado en proyectos reales para empresas
-            nacionales e internacionales, enfocándome en la
-            calidad, experiencia de usuario y construcción
-            de soluciones modernas.
-          </p>
-        </div>
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
-        <div className="grid grid-cols-2 gap-4">
-
-          <div className="bg-slate-900 p-6 rounded-2xl">
-            <h3 className="text-3xl font-bold text-violet-400">
-              2+
-            </h3>
-            <p className="text-gray-400">
-              Años de experiencia
-            </p>
+          <div>
+            <img
+              src="/aura.jpg"
+              alt="Aura López"
+              className="rounded-3xl shadow-2xl"
+            />
           </div>
 
-          <div className="bg-slate-900 p-6 rounded-2xl">
-            <h3 className="text-3xl font-bold text-violet-400">
-              2
-            </h3>
-            <p className="text-gray-400">
-              Proyectos en producción
-            </p>
-          </div>
+          <div>
 
-          <div className="bg-slate-900 p-6 rounded-2xl">
-            <h3 className="text-3xl font-bold text-violet-400">
-              QA
-            </h3>
-            <p className="text-gray-400">
-              Testing y calidad
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">
+              Soy Aura Cristina López Carabalí,
+              Ingeniera de Software apasionada por la tecnología,
+              el desarrollo web y la calidad del software.
             </p>
-          </div>
 
-          <div className="bg-slate-900 p-6 rounded-2xl">
-            <h3 className="text-3xl font-bold text-violet-400">
-              B2
-            </h3>
-            <p className="text-gray-400">
-              Inglés
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">
+              Tengo experiencia en desarrollo frontend,
+              QA Testing y despliegue de plataformas digitales.
             </p>
+
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Mi objetivo es crear soluciones tecnológicas
+              que generen valor real para empresas y usuarios.
+            </p>
+
           </div>
 
         </div>
+      </section>
 
-      </div>
-    </section>
+      <Footer />
+    </main>
   );
 }
